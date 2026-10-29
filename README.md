@@ -56,13 +56,13 @@ Louisiana expanded in July 2016, so 2017 was its first full year. I built a **sy
 
 ![Synthetic control](images/synthetic_control_louisiana.png)
 
-- Louisiana's coverage ran **9.5 pp above** its synthetic control in 2017–2019, close to the national 2-year+ event-study effects of 8–9 pp.
+- Louisiana's coverage ran **9.5 pp above** its synthetic control in 2017–2019. That's larger than the national event-study effects for the same first three years after expansion (4.0, 7.0 and 8.0 pp), so Louisiana was a strong but not implausible responder.
 - **Placebo test:** rerunning the method with each of the 16 never-expanding states as if *it* had been treated, Louisiana's post/pre error ratio ranks **1st of 17**. That's the most extreme outcome possible with this donor pool (permutation p = 1/17 ≈ 0.06).
 - The gap starts opening in 2016, consistent with expansion taking effect mid-year.
 
 ## Data
 
-- **Source:** American Community Survey (ACS) estimates of the share of low-income (≤ 138% of the federal poverty level) childless adults aged 19–64 with health insurance. These are state-level, 2008–2019, weighted by state population. They're distributed with the [`moderndid`](https://github.com/jordandeklerk/moderndid) package (`load_ehec`) and are the same data used in *Baker, Callaway, Cunningham, Goodman-Bacon & Sant'Anna, "Difference-in-Differences Designs: A Practitioner's Guide."* A copy is in [`data/`](data/).
+- **Source:** American Community Survey (ACS) estimates of the share of low-income childless adults with health insurance, by state and year (2008–2019), with state population weights. They're distributed with the [`moderndid`](https://github.com/jordandeklerk/moderndid) package (`load_ehec`) and are the same data used in *Baker, Callaway, Cunningham, Goodman-Bacon & Sant'Anna, "Difference-in-Differences Designs: A Practitioner's Guide."* A copy is in [`data/`](data/).
 - **46 states.** Delaware, DC, Massachusetts, New York and Vermont are excluded because they already covered this group before 2014, so they're neither clean treatment nor clean control units.
 - **Expansion timing:** 2014 (22 states), 2015 (IN, NH, PA), 2016 (AK, MT), 2017 (LA), 2019 (ME, VA). 16 states had not expanded by 2019. Timing follows the source data; Wisconsin is coded as 2014 because it extended BadgerCare to childless adults that year without adopting the ACA expansion.
 
