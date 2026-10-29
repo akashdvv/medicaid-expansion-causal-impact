@@ -1,0 +1,53 @@
+{
+  "two_by_two": {
+    "treated_pre": 62.74,
+    "treated_post": 79.76,
+    "control_pre": 58.19,
+    "control_post": 66.98,
+    "treated_change": 17.02,
+    "control_change": 8.79,
+    "did": 8.23
+  },
+  "twfe_pp": 7.4,
+  "cs_never_pp": [
+    7.42,
+    5.05,
+    9.79
+  ],
+  "cs_notyet_pp": [
+    7.49,
+    5.19,
+    9.79
+  ],
+  "event_study_pp": {
+    "-5": -0.37,
+    "-4": -0.39,
+    "-3": -0.15,
+    "-2": -0.64,
+    "-1": 0.0,
+    "0": 4.0,
+    "1": 6.95,
+    "2": 8.01,
+    "3": 8.38,
+    "4": 8.64,
+    "5": 9.06
+  },
+  "honestdid_breakdown_Mbar": {
+    "0": 2.0,
+    "2": 2.0,
+    "5": 1.0
+  },
+  "louisiana": {
+    "avg_post_gap_pp": 9.48,
+    "rmspe_ratio": 10.1,
+    "placebo_rank": "1 of 17",
+    "permutation_p_value": 0.059,
+    "donor_weights": {
+      "FL": 0.185,
+      "GA": 0.374,
+      "KS": 0.078,
+      "SC": 0.276,
+      "TN": 0.087
+    }
+  }
+}
